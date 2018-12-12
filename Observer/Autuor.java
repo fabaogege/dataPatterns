@@ -1,6 +1,5 @@
 package designPatterns.Observer;
 import java.util.ArrayList;
-
 public class Autuor implements Subject{
     private ArrayList observers;//被观察者集合,在构造器中创建
     private String messages;//通知的信息
@@ -9,14 +8,14 @@ public class Autuor implements Subject{
     }
     @Override
     //添加读者
-    public void registerObserver(Object object) {
-        observers.add(object);
+    public void registerObserver(Observer o) {
+        observers.add(o);
     }
 
     @Override
     //删除读者
-    public void removeObserver(Object object) {
-        int i =observers.indexOf(object);
+    public void removeObserver(Observer o) {
+        int i =observers.indexOf(o);
         if(i>=0){
             observers.remove(i);
         }
