@@ -6,7 +6,6 @@ public class Reader implements Observer{
     public void update(String messages) {
         this.messages = messages;
         get();
-
     }
     public void get(){
         System.out.println(name+"收到消息:"+messages);
