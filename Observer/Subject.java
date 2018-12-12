@@ -7,7 +7,7 @@ package designPatterns.Observer;
  * 定义 添加，删除，通知观察者的方法
  */
 public interface Subject {
-    public void registerObserver(Object object);
-    public void removeObserver(Object object);
+    public void registerObserver(Observer object);
+    public void removeObserver(Observer object);
     public void notifyObserver();
 }
